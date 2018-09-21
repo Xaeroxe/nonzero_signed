@@ -1,4 +1,4 @@
-# nonzero_signed [![Crates.io](https://img.shields.io/crates/v/nonzero_signed.svg)](crates.io/crates/nonzero_signed)
+# nonzero_signed [![Crates.io](https://img.shields.io/crates/v/nonzero_signed.svg)](https://crates.io/crates/nonzero_signed)
 
 This rust crate provides a small set of types for signed nonzero integers.
 
