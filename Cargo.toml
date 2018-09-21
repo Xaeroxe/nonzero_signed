@@ -1,6 +1,6 @@
 [package]
 name = "nonzero_signed"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["Jacob Kiesel <kieseljake@gmail.com>"]
 documentation = "https://xaeroxe.github.io/nonzero_signed/doc/nonzero_signed/"
 repository = "https://github.com/Xaeroxe/nonzero_signed"

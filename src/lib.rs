@@ -1,3 +1,4 @@
+use std::cmp::Ordering;
 use std::num::*;
 use std::fmt;
 
@@ -27,7 +28,7 @@ macro_rules! def_signed {
             /// use nonzero_signed::NonZeroI32;
             /// assert_eq!(size_of::<Option<NonZeroI32>>(), size_of::<i32>());
             /// ```
-            #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
+            #[derive(Copy, Clone, Eq, PartialEq, Hash)]
             #[repr(transparent)]
             pub struct $name($inner);
 
@@ -56,6 +57,18 @@ macro_rules! def_signed {
                 #[inline]
                 pub fn get(self) -> $zeroable_signed {
                     self.0.get() as $zeroable_signed
+                }
+            }
+
+            impl Ord for $name {
+                fn cmp(&self, other: &Self) -> Ordering {
+                    self.get().cmp(&other.get())
+                }
+            }
+
+            impl PartialOrd for $name {
+                fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
+                    Some(self.cmp(other))
                 }
             }
 
