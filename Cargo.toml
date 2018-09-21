@@ -1,0 +1,12 @@
+[package]
+name = "nonzero_signed"
+version = "1.0.0"
+authors = ["Jacob Kiesel <kieseljake@gmail.com>"]
+documentation = "https://docs.rs/nonzero_signed"
+repository = "https://github.com/Xaeroxe/nonzero_signed"
+keywords = ["nonzero", "signed", "zero", "number"]
+categories = ["data-structures", "memory-management"]
+license = "MIT/Apache-2.0"
+description = "A small set of types for signed nonzero integers."
+
+[dependencies]
