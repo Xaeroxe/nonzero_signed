@@ -1,8 +1,8 @@
 [package]
 name = "nonzero_signed"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Jacob Kiesel <kieseljake@gmail.com>"]
-documentation = "https://docs.rs/nonzero_signed"
+documentation = "https://xaeroxe.github.io/nonzero_signed/doc/nonzero_signed/"
 repository = "https://github.com/Xaeroxe/nonzero_signed"
 keywords = ["nonzero", "signed", "zero", "number"]
 categories = ["data-structures", "memory-management"]
