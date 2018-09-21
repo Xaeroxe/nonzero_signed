@@ -82,6 +82,11 @@ mod tests {
     #[test]
     fn wrapping_test() {
         assert!(NonZeroI8::new(0).is_none());
-        assert!(NonZeroI8::new(5).unwrap().get() == 5);
+        assert!(NonZeroI8::new(-5).unwrap().get() == -5);
+    }
+
+    #[test]
+    fn format_test() {
+        assert_eq!(format!("{}", NonZeroI8::new(-5).unwrap()), "-5")
     }
 }
