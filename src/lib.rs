@@ -1,6 +1,6 @@
 use std::cmp::Ordering;
-use std::num::*;
 use std::fmt;
+use std::num::*;
 
 macro_rules! impl_nonzero_fmt {
     ( ( $( $Trait: ident ),+ ) for $Ty: ident ) => {
@@ -28,6 +28,7 @@ macro_rules! def_signed {
             /// use nonzero_signed::NonZeroI32;
             /// assert_eq!(size_of::<Option<NonZeroI32>>(), size_of::<i32>());
             /// ```
+            #[deprecated(since = "1.0.3", note = "These became part of std::num in Rust 1.33, please use the std types instead of this crate.")]
             #[derive(Copy, Clone, Eq, PartialEq, Hash)]
             #[repr(transparent)]
             pub struct $name($inner);
