@@ -1,9 +1,10 @@
 # nonzero_signed [![Crates.io](https://img.shields.io/crates/v/nonzero_signed.svg)](https://crates.io/crates/nonzero_signed)
 
-## **DEPRECATED**
+## DEPRECATED
 
-Rust's std lib stabilized their own signed NonZero types in Rust 1.33, please use
-those instead. You can find them in `std::num` or `core::num`.
+Rust's std lib stabilized their own signed NonZero types in Rust 1.34, please use
+those instead if you're using Rust 1.34 or greater. You can find them in `std::num`
+or `core::num`.
 
 ## Description
 
