@@ -1,6 +1,6 @@
 [package]
 name = "nonzero_signed"
-version = "1.0.3"
+version = "1.0.4"
 authors = ["Jacob Kiesel <kieseljake@gmail.com>"]
 documentation = "https://xaeroxe.github.io/nonzero_signed/doc/nonzero_signed/"
 repository = "https://github.com/Xaeroxe/nonzero_signed"
@@ -10,7 +10,7 @@ license = "MIT/Apache-2.0"
 description = """
 DEPRECATED
 
-Rust's std lib will stabilize their own signed NonZero types in Rust 1.34, please
+Rust's std lib has stabilized their own signed NonZero types in Rust 1.34, please
 use those instead if you're using Rust 1.34 or greater. You can find them in
 std::num or core::num.
 
@@ -20,3 +20,4 @@ A small set of types for signed nonzero integers.
 """
 
 [dependencies]
+rustversion = "1.0.17"
